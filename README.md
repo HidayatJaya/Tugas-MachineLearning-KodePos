@@ -1,8 +1,8 @@
-# 📍 Machine Learning 
+# 🤖 Machine Learning Classification Projects
 
-Proyek Machine Learning untuk memprediksi kode pos di wilayah Jawa Barat berdasarkan informasi wilayah administratif, seperti provinsi, kabupaten/kota, kecamatan, dan desa/kelurahan.
+Repository ini berisi kumpulan proyek Machine Learning yang berfokus pada tiga jenis metode klasifikasi, yaitu **Binary Classification, Multiclass Classification, dan Multilabel Classification**.
 
-Proyek ini dibuat sebagai bagian dari pembelajaran dan praktikum Machine Learning, dengan tahapan mulai dari pengumpulan data, preprocessing, eksplorasi data, pembangunan model, hingga evaluasi.
+Proyek ini dibuat sebagai bagian dari pembelajaran dan praktikum Machine Learning untuk memahami proses pengolahan dataset, preprocessing, eksplorasi data, pembangunan model, hingga evaluasi performa model.
 
 ---
 
@@ -10,104 +10,155 @@ Proyek ini dibuat sebagai bagian dari pembelajaran dan praktikum Machine Learnin
 
 1. [Deskripsi Proyek](#-deskripsi-proyek)
 2. [Tujuan](#-tujuan)
-3. [Dataset](#-dataset)
-4. [Tahapan Pengerjaan](#-tahapan-pengerjaan)
-5. [Algoritma dan Metode](#-algoritma-dan-metode)
-6. [Hasil Evaluasi](#-hasil-evaluasi)
-7. [Teknologi yang Digunakan](#-teknologi-yang-digunakan)
-8. [Struktur Folder](#-struktur-folder)
-9. [Cara Menjalankan](#-cara-menjalankan)
-10. [Pengembangan Selanjutnya](#-pengembangan-selanjutnya)
+3. [Jenis Klasifikasi](#-jenis-klasifikasi)
+4. [Dataset](#-dataset)
+5. [Tahapan Pengerjaan](#-tahapan-pengerjaan)
+6. [Algoritma dan Metode](#-algoritma-dan-metode)
+7. [Hasil Evaluasi](#-hasil-evaluasi)
+8. [Teknologi yang Digunakan](#-teknologi-yang-digunakan)
+9. [Struktur Folder](#-struktur-folder)
+10. [Cara Menjalankan](#-cara-menjalankan)
+11. [Pengembangan Selanjutnya](#-pengembangan-selanjutnya)
+12. [Informasi Pembuat](#-informasi-pembuat)
 
 ---
 
 ## 📖 Deskripsi Proyek
 
-Proyek ini menggunakan dataset kode pos wilayah Jawa Barat untuk membangun model klasifikasi yang dapat memprediksi kode pos berdasarkan data wilayah administratif.
+Proyek ini merupakan kumpulan implementasi Machine Learning menggunakan beberapa pendekatan klasifikasi untuk menyelesaikan permasalahan berdasarkan karakteristik dataset yang berbeda.
 
-Model dilatih menggunakan algoritma **Random Forest Classifier** dengan memanfaatkan fitur nama provinsi, kabupaten/kota, kecamatan, dan desa/kelurahan.
+Terdapat tiga jenis klasifikasi yang diterapkan, yaitu:
+
+- Binary Classification untuk memprediksi dua kategori.
+- Multiclass Classification untuk memprediksi lebih dari dua kategori.
+- Multilabel Classification untuk memprediksi beberapa label sekaligus dalam satu data.
+
+Setiap jenis klasifikasi memiliki dataset, proses pengolahan, metode pemodelan, dan hasil evaluasi yang disesuaikan dengan kebutuhan masing-masing proyek.
 
 ## 🎯 Tujuan
 
-- Memahami proses preprocessing dataset.
-- Melakukan eksplorasi dan visualisasi data.
-- Mengolah fitur kategorikal agar dapat digunakan oleh model Machine Learning.
-- Membangun model klasifikasi untuk memprediksi kode pos.
-- Mengukur performa model menggunakan metrik evaluasi yang sesuai.
+- Memahami konsep dasar klasifikasi dalam Machine Learning.
+- Mempelajari perbedaan Binary, Multiclass, dan Multilabel Classification.
+- Melakukan pengumpulan dan pemuatan dataset.
+- Melakukan preprocessing dan eksplorasi data.
+- Membangun model klasifikasi menggunakan algoritma Machine Learning.
+- Melakukan pengujian dan evaluasi performa model.
+- Memahami proses penyimpanan dan penggunaan kembali model.
+
+## 📚 Jenis Klasifikasi
+
+### 1. Binary Classification
+
+Binary Classification merupakan metode klasifikasi yang digunakan untuk memprediksi data ke dalam dua kelas atau kategori.
+
+**Contoh penerapan:**
+- Prediksi penyakit: Positif atau Negatif.
+- Deteksi spam: Spam atau Bukan Spam.
+- Prediksi kelayakan: Layak atau Tidak Layak.
+
+### 2. Multiclass Classification
+
+Multiclass Classification merupakan metode klasifikasi yang digunakan untuk memprediksi data ke dalam lebih dari dua kelas, tetapi setiap data hanya memiliki satu kelas target.
+
+**Contoh penerapan:**
+- Klasifikasi jenis hewan.
+- Klasifikasi jenis bunga.
+- Prediksi kode pos berdasarkan wilayah administratif.
+
+### 3. Multilabel Classification
+
+Multilabel Classification merupakan metode klasifikasi yang memungkinkan satu data memiliki lebih dari satu label secara bersamaan.
+
+**Contoh penerapan:**
+- Klasifikasi penyakit hewan berdasarkan beberapa gejala.
+- Klasifikasi film berdasarkan genre.
+- Klasifikasi berita berdasarkan beberapa topik.
 
 ## 📂 Dataset
 
-Dataset yang digunakan adalah `KodePos.csv` yang berisi informasi kode pos wilayah Jawa Barat.
+Dataset yang digunakan berasal dari beberapa sumber, salah satunya Kaggle.
 
-**Informasi dataset:**
+Setiap jenis klasifikasi menggunakan dataset yang berbeda sesuai dengan permasalahan yang ingin diselesaikan.
 
-| Keterangan | Jumlah |
-|---|---:|
-| Jumlah data | 5.957 baris |
-| Jumlah kolom | 13 kolom |
-| Nilai kosong | 0 |
-| Data duplikat | 0 |
-| Jumlah kelas kode pos | 914 |
+| Jenis Klasifikasi | Karakteristik Target |
+|---|---|
+| Binary | Dua kelas |
+| Multiclass | Lebih dari dua kelas |
+| Multilabel | Beberapa label dalam satu data |
 
-**Fitur yang digunakan:**
-- `nama_provinsi`
-- `bps_nama_kabupaten_kota`
-- `bps_nama_kecamatan`
-- `bps_nama_desa_kelurahan`
-
-**Target prediksi:**
-- `kode_pos`
-
-**Sumber dataset:** [Tambahkan tautan sumber dataset di sini]
+**Sumber Dataset:**
+- [Kaggle](https://www.kaggle.com/datasets)
+- Sumber dataset lainnya sesuai proyek.
 
 ## ⚙️ Tahapan Pengerjaan
 
-Proyek ini dikerjakan melalui beberapa tahapan:
+Setiap proyek dikerjakan melalui tahapan berikut:
 
 1. **Data Collecting**  
-   Mengumpulkan dataset kode pos wilayah Jawa Barat.
+   Mengumpulkan dataset dari sumber yang relevan.
 
-2. **Data Preprocessing**  
-   Memeriksa tipe data, nilai kosong, data duplikat, dan menyiapkan fitur yang akan digunakan.
+2. **Data Loading**  
+   Memuat dataset menggunakan Pandas.
 
-3. **Exploratory Data Analysis (EDA)**  
-   Melakukan eksplorasi data serta visualisasi untuk memahami karakteristik dataset.
+3. **Data Preprocessing**  
+   Memeriksa dan mempersiapkan data sebelum digunakan dalam pemodelan.
 
-4. **Encoding**  
-   Mengubah fitur kategorikal menggunakan metode One-Hot Encoding.
+4. **Exploratory Data Analysis (EDA)**  
+   Melakukan eksplorasi dan visualisasi untuk memahami karakteristik dataset.
 
-5. **Data Splitting**  
-   Membagi dataset menjadi data latih dan data uji dengan perbandingan 80:20.
+5. **Encoding**  
+   Mengubah data kategorikal menjadi bentuk numerik jika diperlukan.
 
-6. **Modeling**  
-   Membangun dan melatih model menggunakan algoritma Random Forest Classifier.
+6. **Data Splitting**  
+   Membagi dataset menjadi data latih dan data uji.
 
-7. **Evaluation**  
-   Mengukur performa model menggunakan Accuracy dan Weighted F1-Score.
+7. **Modeling**  
+   Membangun dan melatih model Machine Learning sesuai jenis klasifikasi.
 
-8. **Model Saving**  
-   Menyimpan model yang telah dilatih menggunakan Joblib agar dapat digunakan kembali.
+8. **Evaluation**  
+   Mengukur performa model menggunakan metrik evaluasi yang sesuai.
+
+9. **Model Saving**  
+   Menyimpan model yang telah dilatih agar dapat digunakan kembali.
+
+10. **Testing dan Monitoring**  
+    Menguji model menggunakan data baru serta memantau performanya.
 
 ## 🤖 Algoritma dan Metode
 
-Algoritma yang digunakan dalam proyek ini adalah **Random Forest Classifier**.
+Algoritma yang digunakan dapat disesuaikan dengan karakteristik dataset dan permasalahan klasifikasi.
 
-Metode pendukung yang digunakan:
+Beberapa algoritma yang dapat digunakan:
 
-- One-Hot Encoding untuk pengolahan fitur kategorikal.
-- Train-Test Split untuk membagi data latih dan data uji.
-- Joblib untuk menyimpan dan memuat model.
+- Random Forest Classifier
+- Decision Tree Classifier
+- Logistic Regression
+- K-Nearest Neighbors (KNN)
+- Support Vector Machine (SVM)
+
+Metode pendukung:
+
+- Label Encoding
+- One-Hot Encoding
+- Train-Test Split
+- Accuracy
+- Precision
+- Recall
+- F1-Score
+- Hamming Loss
+- Joblib
 
 ## 📊 Hasil Evaluasi
 
-Berdasarkan pengujian model, diperoleh hasil sebagai berikut:
+Hasil evaluasi disesuaikan dengan masing-masing jenis klasifikasi dan dataset yang digunakan.
 
-| Metrik | Hasil |
-|---|---:|
-| Accuracy | 86,997% |
-| Weighted F1-Score | 86,056% |
+| Jenis Klasifikasi | Metrik Evaluasi |
+|---|---|
+| Binary | Accuracy, Precision, Recall, F1-Score |
+| Multiclass | Accuracy, Precision, Recall, Weighted F1-Score |
+| Multilabel | Hamming Loss, Precision, Recall, F1-Score |
 
-Hasil tersebut menunjukkan performa model dalam memprediksi kode pos berdasarkan fitur wilayah yang digunakan.
+Nilai hasil evaluasi akan ditambahkan setelah masing-masing model selesai dilatih dan diuji.
 
 ## 🛠️ Teknologi yang Digunakan
 
@@ -124,28 +175,37 @@ Hasil tersebut menunjukkan performa model dalam memprediksi kode pos berdasarkan
 ## 📁 Struktur Folder
 
 ```text
-MachineLearning-KodePos-JawaBarat/
+Machine-Learning/
 │
-├── KodePos.csv
-├── Kode Pos Jawa Barat.ipynb
-├── model_kodepos.joblib
+├── Binary-Classification/
+│   ├── dataset/
+│   └── Binary_Classification.ipynb
+│
+├── Multiclass-Classification/
+│   ├── dataset/
+│   └── Multiclass_Classification.ipynb
+│
+├── Multilabel-Classification/
+│   ├── dataset/
+│   └── Multilabel_Classification.ipynb
+│
 └── README.md
 ```
 
-*Struktur folder dapat disesuaikan dengan isi repository yang sebenarnya.*
+*Struktur folder dapat disesuaikan dengan susunan repository yang sebenarnya.*
 
 ## ▶️ Cara Menjalankan
 
-1. Clone repository ini:
+1. Clone repository:
 
    ```bash
    git clone [URL_REPOSITORY]
    ```
 
-2. Masuk ke folder proyek:
+2. Masuk ke folder repository:
 
    ```bash
-   cd MachineLearning-KodePos-JawaBarat
+   cd Machine-Learning
    ```
 
 3. Install library yang dibutuhkan:
@@ -154,32 +214,30 @@ MachineLearning-KodePos-JawaBarat/
    pip install pandas numpy matplotlib seaborn scikit-learn joblib jupyter
    ```
 
-4. Buka file notebook:
+4. Pilih folder jenis klasifikasi yang ingin dijalankan.
 
-   ```text
-   Kode Pos Jawa Barat.ipynb
-   ```
+5. Buka file Jupyter Notebook menggunakan Visual Studio Code.
 
-5. Jalankan setiap cell secara berurutan untuk melihat proses preprocessing, pelatihan, dan evaluasi model.
+6. Jalankan setiap cell secara berurutan.
 
 ## 🚀 Pengembangan Selanjutnya
 
-Beberapa pengembangan yang dapat dilakukan pada proyek ini:
-
+- Menambahkan dataset dengan permasalahan yang berbeda.
+- Mencoba berbagai algoritma klasifikasi.
 - Meningkatkan performa model.
-- Melakukan pengujian menggunakan data baru.
-- Mengembangkan sistem prediksi kode pos yang lebih mudah digunakan.
-- Menambahkan fitur atau visualisasi sesuai kebutuhan proyek.
+- Membandingkan hasil evaluasi antaralgoritma.
+- Mengembangkan model menjadi aplikasi prediksi.
 
 ---
 
 ## 👨‍💻 Informasi Pembuat
 
-**Nama:** Muhammad Fauzan Hidayat  
-**Proyek:** Machine Learning Kode Pos Jawa Barat  
-**Mata Kuliah:** Machine Learning 
+**Nama:** Muhammad Fauzan Hidayat
 
+**Proyek:** Machine Learning Classification Projects
+
+**Mata Kuliah:** Machine Learning
 
 ---
 
-*Repository ini dibuat untuk keperluan pembelajaran dan pengembangan proyek Machine Learning.*
+*Repository ini dibuat untuk keperluan pembelajaran, praktikum, dan pengembangan proyek Machine Learning.*
