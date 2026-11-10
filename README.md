@@ -1,4 +1,4 @@
-# 📍 Machine Learning Kode Pos Jawa Barat
+# 📍 Machine Learning 
 
 Proyek Machine Learning untuk memprediksi kode pos di wilayah Jawa Barat berdasarkan informasi wilayah administratif, seperti provinsi, kabupaten/kota, kecamatan, dan desa/kelurahan.
 
