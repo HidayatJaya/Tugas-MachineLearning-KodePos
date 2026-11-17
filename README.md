@@ -1,8 +1,10 @@
-# 🤖 Machine Learning Classification Projects
+# 🤖 Machine Learning Projects
 
-Repository ini berisi kumpulan proyek Machine Learning yang berfokus pada tiga jenis metode klasifikasi, yaitu **Binary Classification, Multiclass Classification, dan Multilabel Classification**.
+Repository ini berisi kumpulan proyek dan praktikum Machine Learning yang berfokus pada tiga jenis klasifikasi, yaitu **Binary Classification, Multiclass Classification, dan Multilabel Classification**.
 
-Proyek ini dibuat sebagai bagian dari pembelajaran dan praktikum Machine Learning untuk memahami proses pengolahan dataset, preprocessing, eksplorasi data, pembangunan model, hingga evaluasi performa model.
+Selain klasifikasi, repository ini juga berisi latihan Machine Learning menggunakan metode Support Vector Classification (SVC) dan Support Vector Regression (SVR).
+
+Proyek ini dibuat sebagai bagian dari pembelajaran dan praktikum Machine Learning untuk memahami proses pengumpulan data, preprocessing, eksplorasi data, pembangunan model, hingga evaluasi performa model.
 
 ---
 
@@ -12,38 +14,38 @@ Proyek ini dibuat sebagai bagian dari pembelajaran dan praktikum Machine Learnin
 2. [Tujuan](#-tujuan)
 3. [Jenis Klasifikasi](#-jenis-klasifikasi)
 4. [Dataset](#-dataset)
-5. [Tahapan Pengerjaan](#-tahapan-pengerjaan)
-6. [Algoritma dan Metode](#-algoritma-dan-metode)
-7. [Hasil Evaluasi](#-hasil-evaluasi)
-8. [Teknologi yang Digunakan](#-teknologi-yang-digunakan)
-9. [Struktur Folder](#-struktur-folder)
-10. [Cara Menjalankan](#-cara-menjalankan)
-11. [Pengembangan Selanjutnya](#-pengembangan-selanjutnya)
+5. [Notebook dan Praktikum](#-notebook-dan-praktikum)
+6. [Tahapan Pengerjaan](#-tahapan-pengerjaan)
+7. [Algoritma dan Metode](#-algoritma-dan-metode)
+8. [Evaluasi Model](#-evaluasi-model)
+9. [Teknologi yang Digunakan](#-teknologi-yang-digunakan)
+10. [Struktur Repository](#-struktur-repository)
+11. [Cara Menjalankan](#-cara-menjalankan)
 12. [Informasi Pembuat](#-informasi-pembuat)
 
 ---
 
 ## 📖 Deskripsi Proyek
 
-Proyek ini merupakan kumpulan implementasi Machine Learning menggunakan beberapa pendekatan klasifikasi untuk menyelesaikan permasalahan berdasarkan karakteristik dataset yang berbeda.
+Repository ini merupakan kumpulan implementasi Machine Learning menggunakan beberapa pendekatan untuk menyelesaikan permasalahan berdasarkan karakteristik dataset yang berbeda.
 
-Terdapat tiga jenis klasifikasi yang diterapkan, yaitu:
+Terdapat tiga jenis klasifikasi yang dipelajari:
 
-- Binary Classification untuk memprediksi dua kategori.
-- Multiclass Classification untuk memprediksi lebih dari dua kategori.
-- Multilabel Classification untuk memprediksi beberapa label sekaligus dalam satu data.
+- **Binary Classification:** Mengklasifikasikan data ke dalam dua kelas.
+- **Multiclass Classification:** Mengklasifikasikan data ke dalam lebih dari dua kelas.
+- **Multilabel Classification:** Mengklasifikasikan data yang dapat memiliki beberapa label sekaligus.
 
-Setiap jenis klasifikasi memiliki dataset, proses pengolahan, metode pemodelan, dan hasil evaluasi yang disesuaikan dengan kebutuhan masing-masing proyek.
+Selain itu, terdapat latihan penerapan algoritma SVC dan SVR sebagai bagian dari pembelajaran Machine Learning.
 
 ## 🎯 Tujuan
 
-- Memahami konsep dasar klasifikasi dalam Machine Learning.
+- Memahami konsep dasar Machine Learning.
 - Mempelajari perbedaan Binary, Multiclass, dan Multilabel Classification.
 - Melakukan pengumpulan dan pemuatan dataset.
 - Melakukan preprocessing dan eksplorasi data.
-- Membangun model klasifikasi menggunakan algoritma Machine Learning.
+- Membangun model Machine Learning.
 - Melakukan pengujian dan evaluasi performa model.
-- Memahami proses penyimpanan dan penggunaan kembali model.
+- Memahami penggunaan algoritma klasifikasi dan regresi.
 
 ## 📚 Jenis Klasifikasi
 
@@ -51,48 +53,60 @@ Setiap jenis klasifikasi memiliki dataset, proses pengolahan, metode pemodelan, 
 
 Binary Classification merupakan metode klasifikasi yang digunakan untuk memprediksi data ke dalam dua kelas atau kategori.
 
-**Contoh penerapan:**
-- Prediksi penyakit: Positif atau Negatif.
-- Deteksi spam: Spam atau Bukan Spam.
-- Prediksi kelayakan: Layak atau Tidak Layak.
+**Dataset yang digunakan:**
+- DataKlinisKuda_Biner.csv
+- Keseimbangan_Biner.csv
+- Obesitas_Biner.csv
+- diabetes.csv
 
 ### 2. Multiclass Classification
 
 Multiclass Classification merupakan metode klasifikasi yang digunakan untuk memprediksi data ke dalam lebih dari dua kelas, tetapi setiap data hanya memiliki satu kelas target.
 
-**Contoh penerapan:**
-- Klasifikasi jenis hewan.
-- Klasifikasi jenis bunga.
-- Prediksi kode pos berdasarkan wilayah administratif.
+**Dataset yang digunakan:**
+- BijiKopi_MultiKelas.csv
+- Candy_MultiKelas.csv
+- Kebun_MultiKelas.csv
+- KodePos.csv
 
 ### 3. Multilabel Classification
 
 Multilabel Classification merupakan metode klasifikasi yang memungkinkan satu data memiliki lebih dari satu label secara bersamaan.
 
-**Contoh penerapan:**
-- Klasifikasi penyakit hewan berdasarkan beberapa gejala.
-- Klasifikasi film berdasarkan genre.
-- Klasifikasi berita berdasarkan beberapa topik.
+**Dataset yang digunakan:**
+- KebunBinatang_MultiLabel.csv
+- Kosmetik_MultiLabel.csv
+- Narkoba_MultiLabel.csv
 
 ## 📂 Dataset
 
-Dataset yang digunakan berasal dari beberapa sumber, salah satunya Kaggle.
+Repository ini menggunakan beberapa dataset dengan karakteristik dan permasalahan yang berbeda.
 
-Setiap jenis klasifikasi menggunakan dataset yang berbeda sesuai dengan permasalahan yang ingin diselesaikan.
+| Jenis Klasifikasi | Jumlah Dataset |
+|---|---:|
+| Binary Classification | 4 |
+| Multiclass Classification | 4 |
+| Multilabel Classification | 3 |
+| **Total** | **11** |
 
-| Jenis Klasifikasi | Karakteristik Target |
+Dataset disimpan dalam format CSV dan digunakan sebagai sumber data untuk proses pembelajaran serta pemodelan Machine Learning.
+
+## 📓 Notebook dan Praktikum
+
+Berikut merupakan file Jupyter Notebook yang tersedia dalam repository:
+
+| Notebook | Keterangan |
 |---|---|
-| Binary | Dua kelas |
-| Multiclass | Lebih dari dua kelas |
-| Multilabel | Beberapa label dalam satu data |
-
-**Sumber Dataset:**
-- [Kaggle](https://www.kaggle.com/datasets)
-- Sumber dataset lainnya sesuai proyek.
+| ClassificationBinary.ipynb | Praktikum klasifikasi biner |
+| ClassificationMultiClass.ipynb | Praktikum klasifikasi multikelas |
+| ClassificationMultiLabel.ipynb | Praktikum klasifikasi multilabel |
+| Kode Pos Jawa Barat.ipynb | Proyek prediksi kode pos Jawa Barat |
+| Latihan_Diabetes_SVC.ipynb | Latihan Support Vector Classification |
+| Latihan_SalaryData_SVR.ipynb | Latihan Support Vector Regression |
 
 ## ⚙️ Tahapan Pengerjaan
 
-Setiap proyek dikerjakan melalui tahapan berikut:
+Tahapan pengerjaan Machine Learning meliputi:
 
 1. **Data Collecting**  
    Mengumpulkan dataset dari sumber yang relevan.
@@ -110,33 +124,30 @@ Setiap proyek dikerjakan melalui tahapan berikut:
    Mengubah data kategorikal menjadi bentuk numerik jika diperlukan.
 
 6. **Data Splitting**  
-   Membagi dataset menjadi data latih dan data uji.
+   Membagi dataset menjadi data latih dan data uji jika diperlukan.
 
 7. **Modeling**  
-   Membangun dan melatih model Machine Learning sesuai jenis klasifikasi.
+   Membangun dan melatih model Machine Learning.
 
 8. **Evaluation**  
    Mengukur performa model menggunakan metrik evaluasi yang sesuai.
 
 9. **Model Saving**  
-   Menyimpan model yang telah dilatih agar dapat digunakan kembali.
+   Menyimpan model yang telah dilatih jika diperlukan.
 
 10. **Testing dan Monitoring**  
-    Menguji model menggunakan data baru serta memantau performanya.
+    Menguji model dan memantau performanya.
 
 ## 🤖 Algoritma dan Metode
 
-Algoritma yang digunakan dapat disesuaikan dengan karakteristik dataset dan permasalahan klasifikasi.
+Beberapa algoritma dan metode yang dipelajari dalam repository ini meliputi:
 
-Beberapa algoritma yang dapat digunakan:
-
-- Random Forest Classifier
-- Decision Tree Classifier
-- Logistic Regression
-- K-Nearest Neighbors (KNN)
 - Support Vector Machine (SVM)
+- Support Vector Classification (SVC)
+- Support Vector Regression (SVR)
+- Algoritma klasifikasi lainnya sesuai implementasi pada masing-masing notebook.
 
-Metode pendukung:
+**Metode pendukung:**
 
 - Label Encoding
 - One-Hot Encoding
@@ -146,19 +157,19 @@ Metode pendukung:
 - Recall
 - F1-Score
 - Hamming Loss
-- Joblib
 
-## 📊 Hasil Evaluasi
+## 📊 Evaluasi Model
 
-Hasil evaluasi disesuaikan dengan masing-masing jenis klasifikasi dan dataset yang digunakan.
+Evaluasi dilakukan untuk mengetahui kemampuan model dalam melakukan prediksi berdasarkan jenis permasalahan yang dikerjakan.
 
-| Jenis Klasifikasi | Metrik Evaluasi |
+| Jenis Model | Metrik Evaluasi |
 |---|---|
-| Binary | Accuracy, Precision, Recall, F1-Score |
-| Multiclass | Accuracy, Precision, Recall, Weighted F1-Score |
-| Multilabel | Hamming Loss, Precision, Recall, F1-Score |
+| Binary Classification | Accuracy, Precision, Recall, F1-Score |
+| Multiclass Classification | Accuracy, Precision, Recall, Weighted F1-Score |
+| Multilabel Classification | Hamming Loss, Precision, Recall, F1-Score |
+| Regression | MAE, MSE, RMSE, R² (sesuai implementasi) |
 
-Nilai hasil evaluasi akan ditambahkan setelah masing-masing model selesai dilatih dan diuji.
+Hasil evaluasi dapat dilihat pada masing-masing notebook.
 
 ## 🛠️ Teknologi yang Digunakan
 
@@ -171,59 +182,73 @@ Nilai hasil evaluasi akan ditambahkan setelah masing-masing model selesai dilati
 - Joblib
 - Jupyter Notebook
 - Visual Studio Code
+- GitHub
 
-## 📁 Struktur Folder
+## 📁 Struktur Repository
+
+Berikut merupakan struktur file sesuai dengan repository GitHub:
 
 ```text
-Machine-Learning/
+Tugas-MachineLearning-KodePos/
 │
-├── Binary-Classification/
-│   ├── dataset/
-│   └── Binary_Classification.ipynb
+├── ClassificationBinary.ipynb
+├── ClassificationMultiClass.ipynb
+├── ClassificationMultiLabel.ipynb
 │
-├── Multiclass-Classification/
-│   ├── dataset/
-│   └── Multiclass_Classification.ipynb
+├── Kode Pos Jawa Barat.ipynb
+├── Latihan_Diabetes_SVC.ipynb
+├── Latihan_SalaryData_SVR.ipynb
 │
-├── Multilabel-Classification/
-│   ├── dataset/
-│   └── Multilabel_Classification.ipynb
+├── DataKlinisKuda_Biner.csv
+├── Keseimbangan_Biner.csv
+├── Obesitas_Biner.csv
+├── diabetes.csv
+│
+├── BijiKopi_MultiKelas.csv
+├── Candy_MultiKelas.csv
+├── Kebun_MultiKelas.csv
+├── KodePos.csv
+│
+├── KebunBinatang_MultiLabel.csv
+├── Kosmetik_MultiLabel.csv
+├── Narkoba_MultiLabel.csv
+│
+├── Salary_Data.csv
+├── Laporan Praktek Machine Learning.docx
 │
 └── README.md
 ```
-
-*Struktur folder dapat disesuaikan dengan susunan repository yang sebenarnya.*
 
 ## ▶️ Cara Menjalankan
 
 1. Clone repository:
 
-   ```bash
-   git clone [URL_REPOSITORY]
-   ```
+```bash
+git clone https://github.com/HidayatJaya/Tugas-MachineLearning-KodePos.git
+```
 
 2. Masuk ke folder repository:
 
-   ```bash
-   cd Machine-Learning
-   ```
+```bash
+cd Tugas-MachineLearning-KodePos
+```
 
 3. Install library yang dibutuhkan:
 
-   ```bash
-   pip install pandas numpy matplotlib seaborn scikit-learn joblib jupyter
-   ```
+```bash
+pip install pandas numpy matplotlib seaborn scikit-learn joblib jupyter
+```
 
-4. Pilih folder jenis klasifikasi yang ingin dijalankan.
+4. Buka folder repository menggunakan Visual Studio Code.
 
-5. Buka file Jupyter Notebook menggunakan Visual Studio Code.
+5. Pilih file Jupyter Notebook yang ingin dijalankan.
 
 6. Jalankan setiap cell secara berurutan.
 
 ## 🚀 Pengembangan Selanjutnya
 
 - Menambahkan dataset dengan permasalahan yang berbeda.
-- Mencoba berbagai algoritma klasifikasi.
+- Mencoba berbagai algoritma Machine Learning.
 - Meningkatkan performa model.
 - Membandingkan hasil evaluasi antaralgoritma.
 - Mengembangkan model menjadi aplikasi prediksi.
@@ -234,9 +259,11 @@ Machine-Learning/
 
 **Nama:** Muhammad Fauzan Hidayat
 
-**Proyek:** Machine Learning Classification Projects
+**Proyek:** Machine Learning Projects
 
 **Mata Kuliah:** Machine Learning
+
+**GitHub:** [HidayatJaya](https://github.com/HidayatJaya)
 
 ---
 
